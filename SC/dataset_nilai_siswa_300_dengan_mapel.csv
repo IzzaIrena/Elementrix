@@ -1,0 +1,301 @@
+nama;matematika;ipa;ips;bahasa_indonesia;bahasa_inggris;jurusan;mapel_pilihan_1;mapel_pilihan_2;mapel_pilihan_3;mapel_pilihan_4
+Siswa_1;88;60;90;95;84;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Sosiologi
+Siswa_2;74;67;67;82;66;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_3;67;75;85;60;63;IPS;Geografi;Ekonomi;Fisika;Bahasa Inggris Lanjutan
+Siswa_4;80;73;93;74;67;IPS;Geografi;Ekonomi;Fisika;Bahasa Inggris Lanjutan
+Siswa_5;78;71;62;80;79;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_6;82;82;71;68;88;IPA;Biologi;Fisika;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_7;70;74;60;68;69;IPA;Biologi;Kimia;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_8;70;87;64;69;93;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Ekonomi
+Siswa_9;83;93;89;85;85;IPA;Fisika;Biologi;Ekonomi;Bahasa Jerman
+Siswa_10;95;61;89;94;62;IPS;Geografi;Sosiologi;Fisika;Bahasa Inggris Lanjutan
+Siswa_11;83;91;76;84;65;IPA;Biologi;Fisika;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_12;62;82;82;85;64;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Ekonomi
+Siswa_13;81;81;74;70;64;IPA;Kimia;Biologi;Ekonomi;Bahasa Jerman
+Siswa_14;61;84;80;61;82;IPA;Fisika;Kimia;Sosiologi;Bahasa Jerman
+Siswa_15;83;81;73;66;68;IPA;Biologi;Fisika;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_16;89;81;61;77;94;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Sosiologi
+Siswa_17;61;65;70;86;79;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
+Siswa_18;80;74;93;93;94;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Geografi
+Siswa_19;92;92;93;86;77;IPS;Sosiologi;Ekonomi;Kimia;Bahasa Inggris Lanjutan
+Siswa_20;71;67;77;76;76;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Ekonomi
+Siswa_21;81;64;89;83;83;IPS;Sosiologi;Ekonomi;Biologi;Bahasa Inggris Lanjutan
+Siswa_22;84;63;74;84;62;IPS;Ekonomi;Sosiologi;Kimia;Bahasa Jerman
+Siswa_23;86;65;86;66;91;IPS;Ekonomi;Geografi;Biologi;Bahasa Inggris Lanjutan
+Siswa_24;87;91;93;65;94;IPS;Geografi;Ekonomi;Biologi;Bahasa Jerman
+Siswa_25;75;89;92;83;72;IPS;Geografi;Sosiologi;Biologi;Bahasa Inggris Lanjutan
+Siswa_26;74;94;83;92;84;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
+Siswa_27;62;75;74;88;68;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Sosiologi
+Siswa_28;66;72;89;81;63;IPS;Geografi;Ekonomi;Kimia;Bahasa Jerman
+Siswa_29;80;89;76;85;73;IPA;Biologi;Kimia;Geografi;Bahasa Inggris Lanjutan
+Siswa_30;68;78;64;87;93;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Ekonomi
+Siswa_31;77;76;88;80;70;IPS;Ekonomi;Sosiologi;Biologi;Bahasa Inggris Lanjutan
+Siswa_32;63;78;63;66;62;IPA;Fisika;Kimia;Geografi;Bahasa Inggris Lanjutan
+Siswa_33;84;87;69;76;87;IPA;Biologi;Kimia;Geografi;Bahasa Jerman
+Siswa_34;73;85;76;79;88;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_35;68;85;69;79;68;IPA;Fisika;Biologi;Ekonomi;Bahasa Jerman
+Siswa_36;85;82;76;81;62;IPA;Biologi;Kimia;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_37;61;68;79;87;84;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_38;79;71;83;66;93;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Inggris Lanjutan
+Siswa_39;87;60;64;60;71;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Inggris Lanjutan
+Siswa_40;66;60;93;91;68;IPS;Ekonomi;Sosiologi;Biologi;Bahasa Inggris Lanjutan
+Siswa_41;67;93;65;72;74;IPA;Kimia;Biologi;Sosiologi;Bahasa Jerman
+Siswa_42;94;91;61;89;84;IPA;Fisika;Kimia;Geografi;Bahasa Inggris Lanjutan
+Siswa_43;73;84;72;82;64;IPA;Biologi;Kimia;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_44;76;60;70;78;70;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Sosiologi
+Siswa_45;95;75;82;91;93;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Ekonomi
+Siswa_46;63;64;75;89;83;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_47;61;81;90;88;74;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Sosiologi
+Siswa_48;65;88;70;88;67;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Geografi
+Siswa_49;63;62;75;89;64;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
+Siswa_50;88;71;67;75;85;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
+Siswa_51;77;85;63;78;77;IPA;Fisika;Biologi;Geografi;Bahasa Inggris Lanjutan
+Siswa_52;85;75;63;77;65;IPA;Kimia;Fisika;Geografi;Bahasa Jerman
+Siswa_53;93;81;84;60;72;IPS;Sosiologi;Geografi;Fisika;Bahasa Inggris Lanjutan
+Siswa_54;69;88;62;73;87;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_55;95;73;91;61;64;IPS;Sosiologi;Ekonomi;Fisika;Bahasa Jerman
+Siswa_56;73;87;62;87;72;IPA;Kimia;Biologi;Ekonomi;Bahasa Jerman
+Siswa_57;90;64;86;89;76;IPS;Geografi;Ekonomi;Fisika;Bahasa Inggris Lanjutan
+Siswa_58;74;89;88;63;91;IPA;Kimia;Biologi;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_59;67;64;91;60;88;IPS;Ekonomi;Geografi;Biologi;Bahasa Jerman
+Siswa_60;73;71;78;67;62;IPS;Geografi;Ekonomi;Fisika;Bahasa Jerman
+Siswa_61;82;75;80;88;93;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Ekonomi
+Siswa_62;80;85;64;62;86;IPA;Fisika;Biologi;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_63;75;85;77;91;72;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Ekonomi
+Siswa_64;77;80;87;69;92;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Jerman
+Siswa_65;83;95;81;69;65;IPA;Kimia;Fisika;Geografi;Bahasa Inggris Lanjutan
+Siswa_66;85;92;80;78;83;IPA;Fisika;Biologi;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_67;84;89;65;93;78;IPA;Kimia;Fisika;Sosiologi;Bahasa Jerman
+Siswa_68;88;82;60;92;75;IPA;Biologi;Fisika;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_69;74;69;64;82;87;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Geografi
+Siswa_70;60;64;71;87;92;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Sosiologi
+Siswa_71;84;95;85;91;72;IPA;Biologi;Kimia;Ekonomi;Bahasa Jerman
+Siswa_72;66;93;93;66;84;IPA;Kimia;Fisika;Geografi;Bahasa Inggris Lanjutan
+Siswa_73;68;90;73;88;95;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
+Siswa_74;83;69;85;67;86;IPS;Geografi;Sosiologi;Fisika;Bahasa Inggris Lanjutan
+Siswa_75;60;78;86;60;66;IPS;Ekonomi;Geografi;Fisika;Bahasa Jerman
+Siswa_76;67;91;68;62;64;IPA;Fisika;Biologi;Ekonomi;Bahasa Jerman
+Siswa_77;83;60;85;83;90;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Sosiologi
+Siswa_78;70;64;81;82;82;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Ekonomi
+Siswa_79;76;63;89;67;69;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Jerman
+Siswa_80;67;75;76;62;91;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Sosiologi
+Siswa_81;94;83;85;92;89;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Sosiologi
+Siswa_82;94;75;95;87;90;IPS;Ekonomi;Sosiologi;Biologi;Bahasa Jerman
+Siswa_83;92;61;60;67;77;IPA;Biologi;Kimia;Geografi;Bahasa Jerman
+Siswa_84;64;87;67;93;95;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Sosiologi
+Siswa_85;87;91;94;94;61;IPS;Geografi;Sosiologi;Fisika;Bahasa Jerman
+Siswa_86;66;86;74;91;73;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Ekonomi
+Siswa_87;68;79;81;83;72;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_88;67;83;73;73;88;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Ekonomi
+Siswa_89;71;71;85;91;71;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Ekonomi
+Siswa_90;93;94;87;75;61;IPA;Fisika;Biologi;Geografi;Bahasa Jerman
+Siswa_91;92;92;82;63;91;IPA;Kimia;Biologi;Sosiologi;Bahasa Jerman
+Siswa_92;82;92;73;80;72;IPA;Fisika;Kimia;Sosiologi;Bahasa Jerman
+Siswa_93;83;71;83;73;86;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Inggris Lanjutan
+Siswa_94;94;62;61;90;76;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Sosiologi
+Siswa_95;81;60;85;77;90;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Ekonomi
+Siswa_96;86;92;73;66;93;IPA;Biologi;Kimia;Geografi;Bahasa Jerman
+Siswa_97;94;69;66;69;83;IPA;Kimia;Biologi;Geografi;Bahasa Inggris Lanjutan
+Siswa_98;60;88;62;66;94;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Ekonomi
+Siswa_99;94;72;82;92;65;IPS;Ekonomi;Geografi;Fisika;Bahasa Jerman
+Siswa_100;73;71;77;82;78;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_101;62;90;94;80;89;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Ekonomi
+Siswa_102;60;61;74;78;66;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Ekonomi
+Siswa_103;64;94;84;78;69;IPA;Kimia;Fisika;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_104;85;82;87;95;91;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Sosiologi
+Siswa_105;73;76;69;88;93;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Sosiologi
+Siswa_106;86;85;76;77;87;IPA;Fisika;Kimia;Geografi;Bahasa Jerman
+Siswa_107;68;67;81;61;74;IPS;Sosiologi;Ekonomi;Fisika;Bahasa Inggris Lanjutan
+Siswa_108;74;88;85;60;89;IPA;Kimia;Fisika;Sosiologi;Bahasa Jerman
+Siswa_109;74;85;84;64;88;IPA;Fisika;Biologi;Ekonomi;Bahasa Jerman
+Siswa_110;85;69;76;79;81;IPS;Geografi;Sosiologi;Biologi;Bahasa Jerman
+Siswa_111;72;85;72;70;63;IPA;Biologi;Kimia;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_112;91;93;79;61;79;IPA;Kimia;Biologi;Sosiologi;Bahasa Jerman
+Siswa_113;91;66;84;62;91;IPS;Geografi;Sosiologi;Kimia;Bahasa Jerman
+Siswa_114;63;63;63;82;95;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_115;89;70;69;71;63;IPA;Fisika;Biologi;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_116;82;88;62;79;86;IPA;Kimia;Fisika;Sosiologi;Bahasa Jerman
+Siswa_117;74;95;77;64;76;IPA;Kimia;Fisika;Geografi;Bahasa Inggris Lanjutan
+Siswa_118;88;84;95;89;71;IPS;Sosiologi;Geografi;Kimia;Bahasa Inggris Lanjutan
+Siswa_119;95;80;81;68;81;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Jerman
+Siswa_120;72;95;93;93;76;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Sosiologi
+Siswa_121;91;69;67;94;69;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Ekonomi
+Siswa_122;66;68;78;81;60;IPS;Geografi;Ekonomi;Fisika;Bahasa Inggris Lanjutan
+Siswa_123;81;83;65;83;81;IPA;Fisika;Biologi;Geografi;Bahasa Inggris Lanjutan
+Siswa_124;87;94;85;76;85;IPA;Kimia;Biologi;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_125;61;94;93;69;77;IPA;Biologi;Fisika;Sosiologi;Bahasa Jerman
+Siswa_126;65;95;65;89;73;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Geografi
+Siswa_127;87;77;92;82;88;IPS;Sosiologi;Ekonomi;Biologi;Bahasa Inggris Lanjutan
+Siswa_128;87;91;81;91;71;IPA;Fisika;Biologi;Ekonomi;Bahasa Jerman
+Siswa_129;79;83;80;76;95;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Ekonomi
+Siswa_130;89;82;65;76;94;IPA;Biologi;Kimia;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_131;70;91;65;73;71;IPA;Kimia;Biologi;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_132;87;71;63;68;66;IPA;Kimia;Biologi;Sosiologi;Bahasa Jerman
+Siswa_133;84;72;89;61;88;IPS;Sosiologi;Geografi;Biologi;Bahasa Inggris Lanjutan
+Siswa_134;92;82;70;84;70;IPA;Fisika;Biologi;Geografi;Bahasa Inggris Lanjutan
+Siswa_135;60;84;89;68;92;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Ekonomi
+Siswa_136;86;94;90;81;65;IPA;Kimia;Fisika;Geografi;Bahasa Jerman
+Siswa_137;72;89;83;63;74;IPA;Fisika;Kimia;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_138;62;76;68;85;91;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Ekonomi
+Siswa_139;65;79;62;88;70;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Sosiologi
+Siswa_140;67;84;90;93;82;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
+Siswa_141;86;81;95;82;85;IPS;Geografi;Ekonomi;Fisika;Bahasa Inggris Lanjutan
+Siswa_142;68;72;83;70;93;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Ekonomi
+Siswa_143;92;78;90;65;93;IPS;Ekonomi;Geografi;Fisika;Bahasa Jerman
+Siswa_144;83;95;65;77;88;IPA;Fisika;Kimia;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_145;74;71;61;80;63;IPA;Kimia;Fisika;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_146;91;78;79;95;76;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Sosiologi
+Siswa_147;91;71;87;93;94;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Ekonomi
+Siswa_148;83;68;70;76;72;IPS;Geografi;Ekonomi;Biologi;Bahasa Inggris Lanjutan
+Siswa_149;71;66;63;84;74;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_150;61;87;74;71;88;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Ekonomi
+Siswa_151;62;73;65;82;88;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Geografi
+Siswa_152;76;90;89;81;70;IPA;Fisika;Kimia;Geografi;Bahasa Inggris Lanjutan
+Siswa_153;61;78;61;80;91;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_154;61;75;74;86;61;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Geografi
+Siswa_155;87;64;70;90;73;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Sosiologi
+Siswa_156;82;94;67;65;79;IPA;Kimia;Fisika;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_157;91;71;85;86;81;IPS;Geografi;Ekonomi;Kimia;Bahasa Jerman
+Siswa_158;92;84;64;93;70;IPA;Kimia;Biologi;Ekonomi;Bahasa Jerman
+Siswa_159;60;80;65;71;86;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Geografi
+Siswa_160;78;95;85;66;62;IPA;Fisika;Biologi;Ekonomi;Bahasa Jerman
+Siswa_161;61;82;63;69;76;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Geografi
+Siswa_162;85;75;78;76;87;IPS;Geografi;Sosiologi;Kimia;Bahasa Inggris Lanjutan
+Siswa_163;91;73;79;85;88;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Ekonomi
+Siswa_164;65;90;92;80;80;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Geografi
+Siswa_165;91;64;79;87;75;IPS;Geografi;Ekonomi;Fisika;Bahasa Jerman
+Siswa_166;63;94;71;61;79;IPA;Kimia;Biologi;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_167;70;82;60;60;65;IPA;Biologi;Fisika;Geografi;Bahasa Inggris Lanjutan
+Siswa_168;76;88;85;95;78;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Geografi
+Siswa_169;83;70;73;85;64;IPS;Geografi;Ekonomi;Fisika;Bahasa Jerman
+Siswa_170;64;77;70;88;62;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Sosiologi
+Siswa_171;93;71;95;80;60;IPS;Geografi;Sosiologi;Kimia;Bahasa Inggris Lanjutan
+Siswa_172;65;68;72;70;74;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Sosiologi
+Siswa_173;81;69;62;70;93;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_174;70;76;92;95;94;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Geografi
+Siswa_175;75;66;65;94;84;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_176;92;72;69;93;83;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Geografi
+Siswa_177;68;68;64;83;71;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Sosiologi
+Siswa_178;65;86;82;81;77;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_179;75;61;69;64;74;IPS;Ekonomi;Geografi;Biologi;Bahasa Inggris Lanjutan
+Siswa_180;88;64;61;92;75;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Geografi
+Siswa_181;62;88;72;95;86;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_182;79;78;61;79;67;IPA;Biologi;Fisika;Sosiologi;Bahasa Jerman
+Siswa_183;95;67;79;78;84;IPS;Ekonomi;Geografi;Biologi;Bahasa Jerman
+Siswa_184;78;60;60;94;76;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Geografi
+Siswa_185;85;81;68;76;88;IPA;Kimia;Fisika;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_186;62;76;76;93;67;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_187;78;66;68;68;74;IPS;Geografi;Ekonomi;Fisika;Bahasa Jerman
+Siswa_188;79;84;70;85;86;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_189;91;63;74;61;66;IPS;Geografi;Ekonomi;Kimia;Bahasa Inggris Lanjutan
+Siswa_190;66;95;83;68;62;IPA;Biologi;Fisika;Geografi;Bahasa Inggris Lanjutan
+Siswa_191;92;65;94;68;88;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Jerman
+Siswa_192;77;90;89;76;83;IPA;Kimia;Biologi;Geografi;Bahasa Inggris Lanjutan
+Siswa_193;60;78;90;60;62;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Inggris Lanjutan
+Siswa_194;70;86;64;84;79;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Ekonomi
+Siswa_195;87;69;73;84;74;IPS;Sosiologi;Ekonomi;Kimia;Bahasa Jerman
+Siswa_196;84;85;70;94;84;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_197;82;78;68;62;89;IPA;Fisika;Biologi;Geografi;Bahasa Inggris Lanjutan
+Siswa_198;90;62;93;89;73;IPS;Sosiologi;Ekonomi;Fisika;Bahasa Jerman
+Siswa_199;89;72;71;93;66;IPA;Fisika;Kimia;Sosiologi;Bahasa Jerman
+Siswa_200;94;87;94;71;76;IPS;Ekonomi;Geografi;Biologi;Bahasa Inggris Lanjutan
+Siswa_201;66;79;94;78;79;IPS;Sosiologi;Ekonomi;Biologi;Bahasa Inggris Lanjutan
+Siswa_202;75;87;60;76;95;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Sosiologi
+Siswa_203;85;67;81;69;68;IPS;Ekonomi;Geografi;Fisika;Bahasa Inggris Lanjutan
+Siswa_204;61;60;88;71;81;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Geografi
+Siswa_205;60;62;67;75;61;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Geografi
+Siswa_206;71;72;70;83;83;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Geografi
+Siswa_207;64;87;73;78;67;IPA;Kimia;Fisika;Sosiologi;Bahasa Jerman
+Siswa_208;91;84;89;67;70;IPS;Sosiologi;Geografi;Biologi;Bahasa Inggris Lanjutan
+Siswa_209;68;92;94;90;72;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Jerman
+Siswa_210;94;65;80;80;76;IPS;Geografi;Ekonomi;Fisika;Bahasa Inggris Lanjutan
+Siswa_211;78;91;64;76;67;IPA;Biologi;Fisika;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_212;75;80;78;82;80;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_213;62;75;73;75;77;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Biologi;Ekonomi
+Siswa_214;79;80;85;65;89;IPS;Sosiologi;Geografi;Fisika;Bahasa Inggris Lanjutan
+Siswa_215;83;70;63;67;77;IPA;Biologi;Kimia;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_216;92;95;84;84;90;IPA;Biologi;Kimia;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_217;83;94;84;77;91;IPA;Fisika;Kimia;Geografi;Bahasa Inggris Lanjutan
+Siswa_218;70;78;77;84;70;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_219;67;79;67;71;84;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
+Siswa_220;95;77;73;74;92;IPA;Fisika;Biologi;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_221;79;73;91;85;67;IPS;Geografi;Sosiologi;Kimia;Bahasa Inggris Lanjutan
+Siswa_222;94;74;92;85;70;IPS;Ekonomi;Geografi;Kimia;Bahasa Jerman
+Siswa_223;84;90;82;91;81;IPA;Biologi;Fisika;Geografi;Bahasa Inggris Lanjutan
+Siswa_224;94;60;74;69;83;IPS;Sosiologi;Ekonomi;Fisika;Bahasa Jerman
+Siswa_225;84;62;92;75;76;IPS;Ekonomi;Sosiologi;Biologi;Bahasa Jerman
+Siswa_226;88;75;84;66;71;IPS;Geografi;Sosiologi;Biologi;Bahasa Inggris Lanjutan
+Siswa_227;77;82;76;76;91;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Ekonomi
+Siswa_228;77;70;92;82;74;IPS;Geografi;Ekonomi;Biologi;Bahasa Inggris Lanjutan
+Siswa_229;61;71;61;85;75;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_230;94;69;73;80;81;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Inggris Lanjutan
+Siswa_231;75;91;65;81;87;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_232;95;75;65;66;79;IPA;Kimia;Fisika;Ekonomi;Bahasa Jerman
+Siswa_233;92;67;62;73;92;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_234;63;71;66;74;69;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Sosiologi
+Siswa_235;92;83;67;66;91;IPA;Biologi;Kimia;Geografi;Bahasa Jerman
+Siswa_236;73;87;74;68;92;IPA;Biologi;Fisika;Ekonomi;Bahasa Jerman
+Siswa_237;80;67;88;67;61;IPS;Geografi;Sosiologi;Biologi;Bahasa Jerman
+Siswa_238;79;87;92;82;92;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_239;67;95;89;88;92;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_240;66;85;86;77;72;IPS;Geografi;Ekonomi;Fisika;Bahasa Inggris Lanjutan
+Siswa_241;62;67;95;90;89;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Geografi
+Siswa_242;76;87;88;89;92;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Geografi
+Siswa_243;92;87;92;94;72;IPS;Sosiologi;Ekonomi;Kimia;Bahasa Jerman
+Siswa_244;71;95;86;77;85;IPA;Biologi;Kimia;Ekonomi;Bahasa Jerman
+Siswa_245;81;86;92;76;81;IPS;Ekonomi;Sosiologi;Fisika;Bahasa Jerman
+Siswa_246;81;76;63;73;61;IPA;Fisika;Kimia;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_247;89;68;81;90;85;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_248;67;92;61;83;74;IPA;Fisika;Kimia;Sosiologi;Bahasa Jerman
+Siswa_249;86;79;69;94;93;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Geografi
+Siswa_250;86;72;64;93;70;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Ekonomi
+Siswa_251;93;87;69;62;62;IPA;Fisika;Kimia;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_252;80;88;92;85;65;IPS;Ekonomi;Sosiologi;Kimia;Bahasa Inggris Lanjutan
+Siswa_253;89;72;72;82;68;IPA;Biologi;Fisika;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_254;92;94;90;74;65;IPA;Biologi;Fisika;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_255;87;65;95;63;68;IPS;Ekonomi;Geografi;Fisika;Bahasa Inggris Lanjutan
+Siswa_256;92;77;83;88;90;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_257;64;64;74;81;91;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Kimia;Sosiologi
+Siswa_258;78;84;88;84;71;IPS;Ekonomi;Geografi;Fisika;Bahasa Inggris Lanjutan
+Siswa_259;63;61;67;72;67;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_260;94;69;64;77;67;IPA;Biologi;Fisika;Geografi;Bahasa Inggris Lanjutan
+Siswa_261;76;89;88;92;87;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Ekonomi
+Siswa_262;87;64;63;75;79;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Sosiologi
+Siswa_263;89;92;71;61;66;IPA;Kimia;Biologi;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_264;88;60;61;94;70;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
+Siswa_265;65;77;86;93;79;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Geografi
+Siswa_266;94;91;90;89;75;IPA;Kimia;Fisika;Ekonomi;Bahasa Jerman
+Siswa_267;83;70;95;72;63;IPS;Ekonomi;Geografi;Kimia;Bahasa Inggris Lanjutan
+Siswa_268;88;80;95;72;65;IPS;Ekonomi;Geografi;Biologi;Bahasa Inggris Lanjutan
+Siswa_269;90;85;85;77;81;IPA;Kimia;Biologi;Geografi;Bahasa Inggris Lanjutan
+Siswa_270;94;84;86;91;85;IPS;Geografi;Sosiologi;Kimia;Bahasa Inggris Lanjutan
+Siswa_271;92;81;64;91;62;IPA;Kimia;Biologi;Ekonomi;Bahasa Jerman
+Siswa_272;80;86;79;94;73;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
+Siswa_273;91;72;70;88;70;IPA;Kimia;Fisika;Geografi;Bahasa Jerman
+Siswa_274;82;92;69;88;77;IPA;Kimia;Fisika;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_275;92;93;65;75;71;IPA;Fisika;Kimia;Geografi;Bahasa Jerman
+Siswa_276;62;94;67;69;82;IPA;Biologi;Fisika;Sosiologi;Bahasa Jerman
+Siswa_277;77;60;82;89;71;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_278;84;80;85;84;72;IPS;Ekonomi;Sosiologi;Biologi;Bahasa Jerman
+Siswa_279;90;65;71;79;84;Bahasa;Bahasa Jerman;Bahasa Inggris Lanjutan;Fisika;Geografi
+Siswa_280;62;87;85;64;78;IPA;Fisika;Biologi;Sosiologi;Bahasa Jerman
+Siswa_281;83;76;72;60;95;IPA;Kimia;Biologi;Geografi;Bahasa Inggris Lanjutan
+Siswa_282;91;64;77;89;67;IPS;Sosiologi;Ekonomi;Kimia;Bahasa Jerman
+Siswa_283;81;90;84;62;88;IPA;Fisika;Kimia;Sosiologi;Bahasa Jerman
+Siswa_284;82;64;92;73;91;IPS;Geografi;Sosiologi;Biologi;Bahasa Inggris Lanjutan
+Siswa_285;61;62;71;89;77;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Fisika;Geografi
+Siswa_286;86;82;95;63;65;IPS;Ekonomi;Geografi;Biologi;Bahasa Jerman
+Siswa_287;61;69;63;77;77;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Sosiologi
+Siswa_288;85;69;64;84;78;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Kimia;Sosiologi
+Siswa_289;76;78;67;60;81;IPA;Kimia;Biologi;Sosiologi;Bahasa Inggris Lanjutan
+Siswa_290;92;76;87;74;91;IPS;Sosiologi;Ekonomi;Biologi;Bahasa Inggris Lanjutan
+Siswa_291;68;80;90;68;62;IPS;Sosiologi;Geografi;Kimia;Bahasa Inggris Lanjutan
+Siswa_292;88;73;68;74;87;IPA;Fisika;Biologi;Geografi;Bahasa Jerman
+Siswa_293;85;68;88;83;69;IPS;Geografi;Ekonomi;Kimia;Bahasa Jerman
+Siswa_294;94;60;73;63;94;IPS;Geografi;Sosiologi;Fisika;Bahasa Inggris Lanjutan
+Siswa_295;84;72;81;71;88;IPS;Geografi;Ekonomi;Kimia;Bahasa Inggris Lanjutan
+Siswa_296;83;63;70;65;74;IPS;Geografi;Sosiologi;Fisika;Bahasa Inggris Lanjutan
+Siswa_297;72;60;82;83;92;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Geografi
+Siswa_298;66;91;60;70;66;IPA;Biologi;Kimia;Ekonomi;Bahasa Inggris Lanjutan
+Siswa_299;95;93;80;72;71;IPA;Biologi;Fisika;Ekonomi;Bahasa Jerman
+Siswa_300;79;87;85;93;89;Bahasa;Bahasa Inggris Lanjutan;Bahasa Jerman;Biologi;Sosiologi
