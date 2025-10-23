@@ -1,0 +1,319 @@
+/* ========================= */
+/* FORM UTAMA                */
+/* ========================= */
+
+/* Container utama form */
+.main-content main form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+}
+
+/* Judul form */
+.main-content main h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Label */
+.main-content main form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input text & date */
+.main-content main form input[type="text"],
+.main-content main form input[type="date"] {
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.main-content main form input[type="text"]:focus,
+.main-content main form input[type="date"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Checkbox list */
+.main-content main form input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main-content main form br {
+    margin-bottom: 5px;
+}
+
+/* Pesan sukses */
+.main-content main p {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* TOMBOL UTAMA FORM         */
+/* ========================= */
+
+.main-content main form button {
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; /* jarak ikon dengan teks */
+}
+
+/* Tambah (+) */
+.main-content main form button[type="button"] {
+    background-color: #2196F3; /* Biru */
+    color: #fff;
+}
+
+.main-content main form button[type="button"]:hover {
+    background-color: #1976D2;
+    transform: scale(1.05);
+}
+
+/* Simpan (submit) */
+.main-content main form button[type="submit"] {
+    background-color: #4CAF50; /* Hijau */
+    color: #fff;
+}
+
+.main-content main form button[type="submit"]:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Tambahan efek klik */
+.main-content main form button:active {
+    transform: scale(0.97);
+}
+
+/* Supaya tombol utama berbeda */
+.main-content main form button[name="simpan_mapel"],
+.main-content main form button[name="simpan_dokumen"],
+.main-content main form button[name="simpan_tanggal"] {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 18px;
+}
+
+.main-content main form button[name="simpan_mapel"]:hover,
+.main-content main form button[name="simpan_dokumen"]:hover,
+.main-content main form button[name="simpan_tanggal"]:hover {
+    background-color: #388E3C;
+}
+
+/* ========================= */
+/* TABEL ITEM (Mapel/Dokumen)*/
+/* ========================= */
+/* 
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.item-table th, 
+.item-table td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.item-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Kolom aksi (edit/hapus) */
+/* .item-table td.aksi {
+    text-align: center;
+    white-space: nowrap;
+} */
+
+/* Tombol kecil dalam tabel */
+/* .item-table button {
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+} */
+
+/* Tombol Edit */
+/* .item-table .btn-edit {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.item-table .btn-edit:hover {
+    background-color: #e0a800;
+    color: #fff;
+} */
+
+/* Tombol Hapus */
+/* .item-table .btn-delete {
+    background-color: #E53935;
+    color: #fff;
+}
+
+.item-table .btn-delete:hover {
+    background-color: #c62828;
+} */
+
+/* ========================= */
+/* TABLE STYLING             */
+/* ========================= */
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.item-table thead {
+    background: linear-gradient(45deg, #4CAF50, #2E7D32);
+    color: #fff;
+    text-align: center;
+}
+
+.item-table th, 
+.item-table td {
+    border: 1px solid #ddd;
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.item-table th {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.item-table tbody tr {
+    transition: background 0.3s;
+}
+
+.item-table tbody tr:hover {
+    background-color: #f5f9f6;
+}
+
+/* Input di tabel */
+.item-table input[type="text"] {
+    width: 90%; /* tidak penuh supaya tidak melewati border tabel */
+    max-width: 250px; /* batasi lebar maksimum */
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* biar padding dihitung di dalam lebar */
+}
+
+.item-table select {
+    width: 90%;
+    max-width: 180px;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.item-table input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76,175,80,0.4);
+    outline: none;
+}
+
+/* Kolom aksi */
+.item-table td.aksi {
+    text-align: center;
+}
+
+/* Tombol Edit & Delete dalam tabel */
+.item-table .btn-edit,
+.item-table .btn-delete {
+    padding: 7px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.item-table .btn-edit {
+    background-color: #FFC107; /* Kuning */
+}
+
+.item-table .btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.item-table button.btn-delete {
+    background-color: #F44336 !important;
+    color: #fff;
+}
+
+.item-table button.btn-delete:hover {
+    background-color: #c62828 !important;
+}
+
+/* Tombol di bawah tabel */
+.table-actions {
+    margin-top: 15px;
+}
+
+.table-actions button {
+    margin-right: 10px;
+}
+

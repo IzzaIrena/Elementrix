@@ -1,0 +1,139 @@
+/* Container utama form */
+.form-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 700px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Judul bagian */
+.form-container h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+  border-left: 4px solid #4a90e2;
+  padding-left: 10px;
+}
+
+/* Label input */
+.form-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input dan select */
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container select,
+.form-container textarea {
+  width: 94%; /* dikurangi sedikit agar tidak mepet ke kanan */
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-size: 14px;
+  margin-left: 3%; /* beri sedikit ruang kiri agar posisi lebih seimbang */
+}
+
+/* Hover/fokus input */
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+  border-color: #4a90e2;
+}
+
+/* Textarea */
+.form-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Tombol */
+.form-container button {
+  display: inline-block;
+  background: #4a90e2;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.form-container button:hover {
+  background: #357abd;
+}
+
+/* Alert pesan sukses/error */
+.alert-section {
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* ===================== BAGIAN NILAI RAPOR ===================== */
+fieldset.semester-group {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 20px 25px; /* tetap rapi */
+  background: #fdfdfd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Judul “Semester 1”, “Semester 2”, dll */
+fieldset.semester-group legend {
+  font-weight: 600;
+  color: #1d4ed8;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+/* Grid mapel dan input nilai */
+.semester-group label {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.semester-group div {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+/* Input nilai */
+.semester-group input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.semester-group input[type="number"]:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74,144,226,0.3);
+}
+
+/* Efek hover ringan */
+.semester-group div:hover {
+  background: #f2f7ff;
+  border-radius: 6px;
+  transition: 0.2s;
+  padding-left: 5px;
+}
