@@ -243,6 +243,7 @@ if($total>0){
 }
 
 // === PEMBAGIAN DATA TRAINING DAN TESTING (80:20) ===
+mt_srand(42);
 shuffle($dataset);
 $totalData = count($dataset);
 $trainSize = floor(0.8 * $totalData);
@@ -297,6 +298,67 @@ foreach ($testSet as $row) {
 
 $akurasi = ($totalTest > 0) ? ($benar / $totalTest) * 100 : 0;
 
+// === UJI MODEL DENGAN DATA TESTING ===
+$benar = 0;
+$totalTest = 0;
+
+$truePositive = ["IPA"=>0, "IPS"=>0, "Bahasa"=>0];
+$falsePositive = ["IPA"=>0, "IPS"=>0, "Bahasa"=>0];
+$falseNegative = ["IPA"=>0, "IPS"=>0, "Bahasa"=>0];
+
+foreach ($testSet as $row) {
+    $x = [
+        $row['matematika'] / 100,
+        $row['ipa'] / 100,
+        $row['ips'] / 100,
+        $row['bahasa_inggris'] / 100
+    ];
+
+    $predProb = [];
+    foreach ($labels as $label) {
+        list($w, $b) = $models[$label];
+        $predProb[$label] = predictLogReg($x, $w, $b);
+    }
+
+    $sumP = array_sum($predProb);
+    foreach ($predProb as $label => $p) {
+        $predProb[$label] = $sumP > 0 ? $p / $sumP : 0;
+    }
+
+    arsort($predProb);
+    $prediksi = array_key_first($predProb);
+    $aktual = trim($row['jurusan']);
+
+    if (strtolower($prediksi) == strtolower($aktual)) {
+        $benar++;
+        $truePositive[$aktual]++;
+    } else {
+        $falsePositive[$prediksi]++;
+        $falseNegative[$aktual]++;
+    }
+
+    $totalTest++;
+}
+
+$akurasi = ($totalTest > 0) ? ($benar / $totalTest) * 100 : 0;
+
+// === HITUNG PRECISION DAN RECALL PER KELAS ===
+$precision = [];
+$recall = [];
+
+foreach ($labels as $label) {
+    $tp = $truePositive[$label];
+    $fp = $falsePositive[$label];
+    $fn = $falseNegative[$label];
+
+    $precision[$label] = ($tp + $fp) > 0 ? $tp / ($tp + $fp) : 0;
+    $recall[$label] = ($tp + $fn) > 0 ? $tp / ($tp + $fn) : 0;
+}
+
+// === RATA-RATA PRECISION DAN RECALL ===
+$avgPrecision = array_sum($precision) / count($precision);
+$avgRecall = array_sum($recall) / count($recall);
+
 ?>
 
 <!DOCTYPE html>
@@ -336,8 +398,29 @@ h3{margin-top:25px;}
   <div class="container">
     <h1>Hasil Prediksi untuk <?= htmlspecialchars($nama_lengkap) ?></h1>
 
-    <!-- <h2>Akurasi Model</h2>
-    <p><b><?= round($akurasi, 2) ?>%</b> dari total <?= $totalTest ?> data uji</p> -->
+    <h2>Akurasi Model</h2>
+    <p><b><?= round($akurasi, 2) ?>%</b> dari total <?= $totalTest ?> data uji</p>
+
+    <h2>Evaluasi Model</h2>
+    <table>
+    <tr>
+        <th>Metode</th><th>IPA</th><th>IPS</th><th>Bahasa</th><th>Rata-rata</th>
+    </tr>
+    <tr>
+        <td><b>Precision</b></td>
+        <td><?= round($precision['IPA']*100,2) ?>%</td>
+        <td><?= round($precision['IPS']*100,2) ?>%</td>
+        <td><?= round($precision['Bahasa']*100,2) ?>%</td>
+        <td><b><?= round($avgPrecision*100,2) ?>%</b></td>
+    </tr>
+    <tr>
+        <td><b>Recall</b></td>
+        <td><?= round($recall['IPA']*100,2) ?>%</td>
+        <td><?= round($recall['IPS']*100,2) ?>%</td>
+        <td><?= round($recall['Bahasa']*100,2) ?>%</td>
+        <td><b><?= round($avgRecall*100,2) ?>%</b></td>
+    </tr>
+    </table>
 
 
     <h2>Prediksi Jurusan</h2>
