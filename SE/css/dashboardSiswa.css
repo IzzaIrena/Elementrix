@@ -376,3 +376,126 @@ header .user-info span {
   transform: scale(1.1);
 }
 
+/* ===== HORIZONTAL TIMELINE ===== */
+.timeline-horizontal {
+  position: relative;
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.timeline-horizontal h2 {
+  font-size: 22px;
+  color: #1d4ed8;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.timeline-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.timeline-step {
+  position: relative;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  z-index: 2;
+}
+
+.timeline-icon {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.timeline-step.done .timeline-icon {
+  background-color: #16a34a;
+  box-shadow: 0 0 10px rgba(22,163,74,0.5);
+}
+
+.timeline-step.active .timeline-icon {
+  background-color: #2563eb;
+  box-shadow: 0 0 15px rgba(37,99,235,0.7);
+  transform: scale(1.1);
+  animation: pulse 1.5s infinite;
+}
+
+.timeline-step.upcoming .timeline-icon {
+  background-color: #9ca3af;
+}
+
+.timeline-label {
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #111827;
+}
+
+.timeline-date {
+  display: block;
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 3px;
+}
+
+.timeline-progress {
+  position: absolute;
+  top: 42px;
+  left: 8%;
+  width: 84%;
+  height: 6px;
+  background: linear-gradient(90deg, #16a34a 0%, #2563eb 50%, #9ca3af 100%);
+  border-radius: 3px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.timeline-track::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #e5e7eb;
+  z-index: 0;
+  border-radius: 3px;
+}
+
+/* Animasi langkah berjalan */
+@keyframes pulse {
+  0% { box-shadow: 0 0 5px rgba(37,99,235,0.5); }
+  50% { box-shadow: 0 0 20px rgba(37,99,235,0.8); }
+  100% { box-shadow: 0 0 5px rgba(37,99,235,0.5); }
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .timeline-track {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timeline-step {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  .timeline-progress, .timeline-track::before {
+    display: none;
+  }
+}
+
