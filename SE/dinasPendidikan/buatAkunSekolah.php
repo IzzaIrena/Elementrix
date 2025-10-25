@@ -111,7 +111,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <li><a href="kelolaTahunAkademik.php"><i class="fa-solid fa-calendar-days"></i> Tahun Akademik</a></li>
       <li><a href="aturanSeleksi.php"><i class="fa-solid fa-scale-balanced"></i> Aturan Seleksi</a></li>
       <li><a href="kelolaPendaftaranDinas.php" class="active"><i class="fa-solid fa-users"></i> Kelola Pendaftaran</a></li>
-      <li><a href="monitoring.php"><i class="fa-solid fa-chart-line"></i> Monitoring</a></li>
       <li><a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
     </ul>
   </aside>
@@ -203,3 +202,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
 </body>
 </html>
+
