@@ -359,6 +359,41 @@ foreach ($labels as $label) {
 $avgPrecision = array_sum($precision) / count($precision);
 $avgRecall = array_sum($recall) / count($recall);
 
+// === SIMPAN HASIL PREDIKSI KE DATABASE ===
+
+// --- Simpan Prediksi Jurusan ---
+if (!empty($prediksiJurusan)) {
+    // Hapus data lama agar tidak duplikat
+    $stmt = $conn->prepare("DELETE FROM prediksi_jurusan WHERE siswa_id=?");
+    $stmt->bind_param("i", $siswa_id);
+    $stmt->execute();
+    $stmt->close();
+
+    // Simpan hasil baru untuk SEMUA jurusan
+    $stmt = $conn->prepare("INSERT INTO prediksi_jurusan (siswa_id, jurusan, probabilitas) VALUES (?, ?, ?)");
+    foreach ($prediksiJurusan as $jur => $p) {
+        $stmt->bind_param("isd", $siswa_id, $jur, $p);
+        $stmt->execute();
+    }
+    $stmt->close();
+}
+
+// --- Simpan Prediksi Mata Pelajaran ---
+if (!empty($prediksiMapel)) {
+    // Hapus data lama agar tidak duplikat
+    $stmt = $conn->prepare("DELETE FROM prediksi_mata_pelajaran WHERE siswa_id=?");
+    $stmt->bind_param("i", $siswa_id);
+    $stmt->execute();
+    $stmt->close();
+
+    // Simpan hasil baru (loop tiap mapel)
+    $stmt = $conn->prepare("INSERT INTO prediksi_mata_pelajaran (siswa_id, mapel_cocok, skor_prediksi) VALUES (?, ?, ?)");
+    foreach ($prediksiMapel as $mapel => $skor) {
+        $stmt->bind_param("isd", $siswa_id, $mapel, $skor);
+        $stmt->execute();
+    }
+    $stmt->close();
+}
 ?>
 
 <!DOCTYPE html>
@@ -369,11 +404,122 @@ $avgRecall = array_sum($recall) / count($recall);
 <link rel="stylesheet" href="../css/dashboardSiswa.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-.container{background:#fff;padding:20px;border-radius:10px;max-width:900px;margin:auto;}
-table{width:100%;border-collapse:collapse;margin-top:15px;}
-th,td{border:1px solid #ccc;padding:8px;text-align:center;}
-th{background:#007bff;color:#fff;}
-h3{margin-top:25px;}
+/* === KONTAINER UTAMA === */
+.container {
+  background:#fff;
+  padding:25px;
+  border-radius:15px;
+  max-width:900px;
+  margin:auto;
+  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+h1 { text-align:center; margin-bottom:15px; color:#1e293b; }
+h2 {
+  margin-top:30px;
+  color:#1e3a8a;
+  border-bottom:3px solid #1d4ed8;
+  display:inline-block;
+  padding-bottom:5px;
+}
+.info-box {
+  background:#eef4ff;
+  border-left:5px solid #1d4ed8;
+  padding:15px;
+  border-radius:8px;
+  margin-bottom:25px;
+  color:#1e293b;
+}
+
+/* === LINGKARAN PREDIKSI JURUSAN === */
+.prediksi-jurusan {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:30px 0;
+}
+.circle {
+  position:relative;
+  width:180px;
+  height:180px;
+}
+.circle svg {
+  width:100%;
+  height:100%;
+  transform:rotate(-90deg);
+}
+.bg {
+  fill:none;
+  stroke:#e5e7eb;
+  stroke-width:3.8;
+}
+.progress {
+  fill:none;
+  stroke:#1d4ed8;
+  stroke-width:3.8;
+  stroke-linecap:round;
+  animation: progressAnim 2s ease-out;
+}
+@keyframes progressAnim {
+  from { stroke-dasharray:0 100; }
+  to { stroke-dasharray:100 100; }
+}
+.label {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+}
+.label h2 {
+  font-size:18px;
+  color:#1d4ed8;
+  margin-bottom:5px;
+}
+.label p {
+  font-size:13px;
+  color:#475569;
+}
+.hasil-utama {
+  background:#e8f6e8;
+  border-left:5px solid #28a745;
+  padding:12px 15px;
+  border-radius:6px;
+  margin-top:15px;
+  font-size:16px;
+  color:#1e293b;
+}
+
+/* === PREDIKSI MAPEL === */
+.prediksi-mapel {
+  text-align:center;
+  margin-top:20px;
+}
+.prediksi-mapel p {
+  color:#475569;
+  margin-bottom:15px;
+}
+.mapel-list {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.mapel {
+  padding:15px 25px;
+  border-radius:30px;
+  color:white;
+  font-weight:500;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mapel.utama { background:#2563EB; }
+.mapel.pendukung { background:#60A5FA; }
+.mapel.lain { background:#9CA3AF; }
+.mapel:hover {
+  transform: translateY(-4px);
+  box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
 </style>
 </head>
 <body>
@@ -395,56 +541,65 @@ h3{margin-top:25px;}
 </div>
 
 <div class="main">
-  <div class="container">
-    <h1>Hasil Prediksi untuk <?= htmlspecialchars($nama_lengkap) ?></h1>
+<div class="container">
+  <h1>Hasil Prediksi untuk <?= htmlspecialchars($nama_lengkap) ?></h1>
 
-    <h2>Akurasi Model</h2>
-    <p><b><?= round($akurasi, 2) ?>%</b> dari total <?= $totalTest ?> data uji</p>
-
-    <h2>Evaluasi Model</h2>
-    <table>
-    <tr>
-        <th>Metode</th><th>IPA</th><th>IPS</th><th>Bahasa</th><th>Rata-rata</th>
-    </tr>
-    <tr>
-        <td><b>Precision</b></td>
-        <td><?= round($precision['IPA']*100,2) ?>%</td>
-        <td><?= round($precision['IPS']*100,2) ?>%</td>
-        <td><?= round($precision['Bahasa']*100,2) ?>%</td>
-        <td><b><?= round($avgPrecision*100,2) ?>%</b></td>
-    </tr>
-    <tr>
-        <td><b>Recall</b></td>
-        <td><?= round($recall['IPA']*100,2) ?>%</td>
-        <td><?= round($recall['IPS']*100,2) ?>%</td>
-        <td><?= round($recall['Bahasa']*100,2) ?>%</td>
-        <td><b><?= round($avgRecall*100,2) ?>%</b></td>
-    </tr>
-    </table>
-
-
-    <h2>Prediksi Jurusan</h2>
-    <table>
-        <tr><th>Jurusan</th><th>Probabilitas (%)</th></tr>
-        <?php foreach($prediksiJurusan as $jur => $p): ?>
-        <tr class="<?= ($jur == $jurusan_dominan ? 'highlight' : '') ?>">
-            <td><?= htmlspecialchars($jur) ?></td>
-            <td><?= round($p*100,2) ?>%</td>
-        </tr>
-        <?php endforeach; ?>
-    </table>
-
-    <h2>Prediksi 4 Mata Pelajaran Pilihan</h2>
-    <table>
-        <tr><th>Mata Pelajaran</th><th>Skor Prediksi (%)</th></tr>
-        <?php foreach($prediksiMapel as $mapel => $p): ?>
-        <tr>
-            <td><?= htmlspecialchars($mapel) ?></td>
-            <td><?= round($p*100,2) ?>%</td>
-        </tr>
-        <?php endforeach; ?>
-    </table>
+  <div class="info-box">
+    <p>
+      Sistem telah memprediksi jurusan dan mata pelajaran pilihan berdasarkan nilai akademik Anda.
+      <br><strong>Catatan:</strong> Prediksi ini bersifat perkiraan dan tidak sepenuhnya benar. 
+      Faktor lain seperti minat, bakat, dan hasil seleksi akhir juga memengaruhi hasil sebenarnya.
+    </p>
   </div>
+
+  <!-- ===== PREDIKSI JURUSAN DALAM LINGKARAN ===== -->
+  <?php 
+    $percentJurusan = round($prediksiJurusan[$jurusan_dominan] * 100, 2);
+  ?>
+  <h2>Prediksi Jurusan</h2>
+  <div class="prediksi-jurusan">
+    <div class="circle">
+      <svg viewBox="0 0 36 36">
+        <path class="bg" d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831" />
+        <path class="progress" stroke-dasharray="<?= $percentJurusan ?>, 100" d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831" />
+      </svg>
+      <div class="label">
+        <h2><?= htmlspecialchars($jurusan_dominan) ?></h2>
+        <p>Prediksi Jurusan</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hasil-utama">
+    <p>Berdasarkan analisis, Anda paling cocok untuk jurusan 
+      <strong><?= htmlspecialchars($jurusan_dominan) ?></strong>. 
+    </p>
+  </div>
+
+  <!-- ===== PREDIKSI MAPEL DALAM KARTU ===== -->
+  <h2>Prediksi 4 Mata Pelajaran Pilihan</h2>
+  <div class="prediksi-mapel">
+    <p>Mata pelajaran berikut direkomendasikan berdasarkan kecocokan dengan hasil prediksi jurusan Anda.</p>
+    <div class="mapel-list">
+      <?php 
+      $warnaMapel = ['utama'=>'#2563EB','pendukung'=>'#60A5FA','lain'=>'#9CA3AF'];
+      $i = 0;
+      foreach($prediksiMapel as $mapel => $p): 
+        $kelas = $i == 0 ? 'utama' : ($i < 2 ? 'pendukung' : 'lain');
+        $i++;
+      ?>
+      <div class="mapel <?= $kelas ?>">
+        <span><?= htmlspecialchars($mapel) ?></span>
+      </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</div>
+
 </div>
 </body>
 </html>
