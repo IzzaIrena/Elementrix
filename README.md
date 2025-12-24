@@ -7,5 +7,6 @@ Pembuatan QR Code pada sistem ini menggunakan library open-source PHP:
 
 php-qrcode by chillerlan
 Repository: https://github.com/chillerlan/php-qrcode
+
 License: MIT
 Library ini digunakan untuk menghasilkan QR Code secara dinamis dan efisien pada proses pendaftaran siswa.
