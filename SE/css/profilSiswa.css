@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Gaya header dan sidebar mengikuti dashboard */
+header {
+  background: linear-gradient(90deg, #2a6fdb, #1d4ed8);
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background: #2a3f54;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.sidebar ul { list-style: none; padding: 0; margin: 0; }
+.sidebar ul li { margin: 15px 0; }
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+}
+.sidebar ul li a:hover { background: #1a2734; border-left: 4px solid #00bcd4; }
+
+.main {
+  margin-left: 240px;
+  margin-top: 70px;
+  padding: 25px;
+}
+
+/* ==================== PROFIL CONTENT ==================== */
+.profil-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profil-container h2 {
+  color: #1d4ed8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.foto-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.foto-wrapper img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1d4ed8;
+}
+
+.profil-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profil-form label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #2a3f54;
+}
+
+.profil-form input,
+.profil-form select,
+.profil-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.profil-form input:focus,
+.profil-form select:focus,
+.profil-form textarea:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 4px rgba(42,111,219,0.3);
+  outline: none;
+}
+
+.profil-form button {
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #2a6fdb, #1d4ed8);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.profil-form button:hover {
+  opacity: 0.9;
+}
+
+.btn-password {
+  background: linear-gradient(90deg, #22c55e, #15803d);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+  .main { margin-left: 0; padding: 15px; }
+  .sidebar { display: none; }
+}

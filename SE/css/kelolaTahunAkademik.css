@@ -1,0 +1,140 @@
+/* ===== Notifikasi ===== */
+.notif {
+    background-color: #e3f2fd; /* biru muda */
+    color: #1565c0; /* biru tua */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border: 1px solid #90caf9;
+}
+
+/* ===== Form Tambah Tahun ===== */
+.tahun-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tahun-form input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1 1 200px;
+}
+
+/* Tombol tambah tahun */
+.tahun-form button {
+    background-color: #4a6c8f; /* biru tabel */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.tahun-form button:hover {
+    background-color: #2a3f54; /* biru tua hover */
+}
+
+/* ===== Tabel Tahun Akademik ===== */
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item-table thead {
+    background: linear-gradient(45deg, #4a6c8f, #2a3f54);
+    color: white;
+}
+
+.item-table th, .item-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.item-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.item-table tbody tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* ===== Tombol Aksi ===== */
+.aksi form {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.btn-edit, .btn-delete {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* Tombol Edit hijau */
+.btn-edit {
+    background-color: #43a047;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #388e3c;
+}
+
+/* Tombol Delete merah */
+.btn-delete {
+    background-color: #e53935;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c62828;
+}
+
+/* ===== Status Aktif / Nonaktif ===== */
+.item-table td span {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.item-table td span[style*="green"] {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.item-table td span[style*="gray"] {
+    background-color: #eeeeee;
+    color: #757575;
+}
+
+/* ===== Responsif ===== */
+@media(max-width: 768px) {
+    .tahun-form {
+        flex-direction: column;
+    }
+
+    .item-table th, .item-table td {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    .btn-edit, .btn-delete {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}

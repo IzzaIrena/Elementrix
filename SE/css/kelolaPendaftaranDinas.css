@@ -1,0 +1,152 @@
+/* ===== RESET DAN DASAR ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  margin-left: 260px;
+  flex: 1;
+  padding: 30px;
+}
+
+/* ===== FILTER FORM ===== */
+.filter-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 15px 20px;
+  margin-top: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.filter-form label {
+  font-weight: 600;
+}
+
+.filter-form select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.filter-form select:focus {
+  border-color: #4a6c8f;
+}
+
+.filter-form button {
+  background-color: #4a6c8f;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.filter-form button:hover {
+  background-color: #3b5875;
+}
+
+/* ===== TABEL DATA ===== */
+.table-container h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #2a3f54;
+}
+
+.table-data {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.table-data thead {
+  background-color: #4a6c8f;
+  color: #fff;
+}
+
+.table-data th, .table-data td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.table-data tbody tr:nth-child(even) {
+  background-color: #f7f9fc;
+}
+
+.table-data tbody tr:hover {
+  background-color: #e3f2fd;
+  transition: 0.2s;
+}
+
+/* ===== TOMBOL DETAIL ===== */
+.btn-detail {
+  display: inline-block;
+  background-color: #2196f3;
+  color: #fff;
+  padding: 4px 8px;       /* lebih kecil dari 6px 12px */
+  border-radius: 4px;     /* sedikit mengecilkan radius */
+  text-decoration: none;
+  font-size: 12px;        /* lebih kecil dari 14px */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-detail i {
+  margin-right: 3px;      /* sedikit mengecilkan jarak ikon */
+}
+
+.btn-detail:hover {
+  background-color: #1976d2;
+  transform: translateY(-1px); /* efek hover lebih subtle */
+}
+
+/* ===== PESAN TIDAK ADA DATA ===== */
+.table-data td[colspan] {
+  text-align: center;
+  color: #777;
+  padding: 25px 0;
+  font-style: italic;
+}
+
+/* ===== RESPONSIF ===== */
+@media(max-width: 900px) {
+  .main-content {
+    margin-left: 210px;
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+}
+
+@media(max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+  .filter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .filter-form select, .filter-form button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,219 @@
+/* ===================== CONTAINER FORM ===================== */
+.form-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 700px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Judul bagian */
+.form-container h3, h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #4a6c8f;
+  border-left: 4px solid #4a6c8f;
+  padding-left: 10px;
+}
+
+/* Label input */
+.form-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a6c8f;
+}
+
+/* Input dan select */
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container select,
+.form-container textarea {
+  width: 94%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+  font-size: 14px;
+  margin-left: 3%;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+  border-color: #4a6c8f;
+  box-shadow: 0 0 5px rgba(74,108,143,0.3);
+}
+
+/* Textarea */
+.form-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Tombol */
+.form-container button {
+  display: inline-block;
+  background: #4a6c8f;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.form-container button:hover {
+  background: #375074;
+}
+
+/* Alert pesan sukses/error */
+.alert-section {
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* ===================== TABEL DETAIL ===================== */
+.table-detail {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 500px;
+  table-layout: fixed;
+  margin-bottom: 25px;
+}
+
+.table-detail th, .table-detail td {
+  border: 1px solid #d0d0d0;
+  padding: 10px 12px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-detail th {
+  background: #4a6c8f;
+  color: #fff;
+  font-weight: 600;
+}
+
+.table-detail th:first-child {
+  width: 180px; /* kolom label tetap */
+  text-align: left;
+}
+
+.table-detail td:last-child {
+  width: calc(100% - 180px);
+  text-align: left;
+}
+
+.table-detail tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.table-detail tbody tr:hover {
+  background: #e1e9f2;
+}
+
+/* ===================== TABEL NILAI AKADEMIK ===================== */
+.table-nilai {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 500px; /* tetap bisa scroll horizontal jika terlalu sempit */
+  table-layout: fixed;
+  margin-bottom: 25px;
+}
+
+.table-nilai th, .table-nilai td {
+  border: 1px solid #d0d0d0;
+  padding: 8px 10px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* mencegah teks terpotong */
+}
+
+.table-nilai th {
+  background: #4a6c8f;
+  color: #fff;
+  font-weight: 600;
+  text-align: center; /* header semester di tengah */
+}
+
+.table-nilai td {
+  text-align: center; /* nilai di tengah */
+}
+
+.table-nilai th:first-child,
+.table-nilai td:first-child {
+  text-align: left; /* nama mapel tetap kiri */
+  width: 180px;
+}
+
+.table-nilai th:nth-child(n+2),
+.table-nilai td:nth-child(n+2) {
+  min-width: 80px; /* kolom semester minimal 80px */
+}
+
+.table-nilai tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.table-nilai tbody tr:hover {
+  background: #e1e9f2;
+}
+
+/* ===================== NILAI RAPOR ===================== */
+.nilai-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  table-layout: fixed; /* agar kolom sama lebar */
+}
+
+.nilai-table th, .nilai-table td {
+  border: 1px solid #d0d0d0;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nilai-table th:first-child,
+.nilai-table td:first-child {
+  text-align: left; /* nama mapel kiri */
+  width: 200px; /* cukup lebar untuk mapel */
+}
+
+.nilai-table td input[type="number"] {
+  width: 100%; /* input mengisi seluruh sel */
+  padding: 6px;
+  border: 1px solid #4a6c8f;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.nilai-table th {
+  background: #4a6c8f;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===================== LINK FILE DOKUMEN ===================== */
+.table-detail a {
+  color: #4a6c8f;
+  text-decoration: none;
+}
+.table-detail a:hover {
+  text-decoration: underline;
+  color: #375074;
+}

@@ -1,0 +1,244 @@
+/* ========================= */
+/* FORM UTAMA                */
+/* ========================= */
+
+.main-content main form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+}
+
+.main-content main h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.main-content main form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.main-content main form input[type="text"],
+.main-content main form input[type="date"] {
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.main-content main form input[type="text"]:focus,
+.main-content main form input[type="date"]:focus {
+    border-color: #4a6c8f;
+    outline: none;
+}
+
+.main-content main p {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* TOMBOL UTAMA FORM         */
+/* ========================= */
+
+.main-content main form button {
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+}
+
+/* Tambah (+) - biru senada tabel */
+.main-content main form button[type="button"] {
+    background-color: #4a6c8f;
+}
+
+.main-content main form button[type="button"]:hover {
+    background-color: #2a3f54;
+    transform: scale(1.05);
+}
+
+/* Simpan (submit) - hijau */
+.main-content main form button[type="submit"] {
+    background-color: #43a047;
+}
+
+.main-content main form button[type="submit"]:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.main-content main form button:active {
+    transform: scale(0.97);
+}
+
+/* Tombol spesifik simpan */
+.main-content main form button[name="simpan_mapel"],
+.main-content main form button[name="simpan_dokumen"],
+.main-content main form button[name="simpan_tanggal"] {
+    background-color: #43a047;
+}
+
+.main-content main form button[name="simpan_mapel"]:hover,
+.main-content main form button[name="simpan_dokumen"]:hover,
+.main-content main form button[name="simpan_tanggal"]:hover {
+    background-color: #388e3c;
+}
+
+/* ========================= */
+/* TABEL ITEM (Mapel/Dokumen)*/
+/* ========================= */
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.item-table thead {
+    background: linear-gradient(45deg, #4a6c8f, #2a3f54);
+    color: #fff;
+    text-align: center;
+}
+
+.item-table th, 
+.item-table td {
+    border: 1px solid #ddd;
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.item-table th {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.item-table tbody tr {
+    transition: background 0.3s;
+}
+
+.item-table tbody tr:hover {
+    background-color: #f0f4f8;
+}
+
+/* Input & Select di tabel */
+.item-table input[type="text"],
+.item-table select {
+    width: 90%;
+    max-width: 250px;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.item-table input[type="text"]:focus,
+.item-table select:focus {
+    border-color: #4a6c8f;
+    box-shadow: 0 0 5px rgba(74,108,143,0.4);
+    outline: none;
+}
+
+/* Kolom aksi */
+.item-table td.aksi {
+    text-align: center;
+}
+
+/* Tombol Edit & Delete di tabel */
+.item-table .btn-edit,
+.item-table .btn-delete {
+    padding: 7px 10px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+/* Edit - kuning harmonis */
+.item-table .btn-edit {
+    background-color: #FFC107;
+}
+
+.item-table .btn-edit:hover {
+    background-color: #e0a800;
+}
+
+/* Hapus - merah */
+.item-table .btn-delete {
+    background-color: #E53935;
+}
+
+.item-table .btn-delete:hover {
+    background-color: #c62828;
+}
+
+/* Tombol di bawah tabel */
+.table-actions {
+    margin-top: 15px;
+}
+
+.table-actions button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Tombol Tambah di bawah tabel */
+.table-actions button[type="button"] {
+    background-color: #4a6c8f;
+}
+
+.table-actions button[type="button"]:hover {
+    background-color: #2a3f54;
+}
+
+/* Tombol Simpan di bawah tabel */
+.table-actions button[type="submit"] {
+    background-color: #43a047;
+}
+
+.table-actions button[type="submit"]:hover {
+    background-color: #388e3c;
+}

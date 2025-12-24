@@ -1,0 +1,109 @@
+/* ===== Umum ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+}
+
+/* ===== Tabel Data Sekolah ===== */
+.tabel-data {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 14px;
+}
+
+.tabel-data thead {
+    background-color: #4a6c8f;
+    color: #fff;
+}
+
+.tabel-data th, .tabel-data td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tabel-data tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+.tabel-data tbody tr:hover {
+    background-color: #e3f2fd;
+    transition: 0.2s;
+}
+
+/* ===== Tombol Edit (Versi Lebih Rapi & Kompak) ===== */
+.btn-edit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4a6c8f;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-edit i {
+    margin-right: 4px;
+    font-size: 13px;
+}
+
+.btn-edit:hover {
+    background-color: #2a3f54;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.btn-edit:active {
+    transform: scale(0.96);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* ===== Pesan Tidak Ada Data ===== */
+.tabel-data td[colspan] {
+    text-align: center;
+    color: #555;
+    padding: 25px 0;
+    font-style: italic;
+}
+
+/* ===== Responsif ===== */
+@media(max-width: 900px) {
+    .sidebar {
+        width: 200px;
+    }
+    .main-content {
+        margin-left: 220px;
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .tabel-data th, .tabel-data td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
