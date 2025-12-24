@@ -1,0 +1,52 @@
+import requests
+import cv2
+import numpy as np
+import time
+
+ESP32_CAM_URL = "http://10.43.210.120/capture"      # ambil gambar dari ESP32-CAM
+ESP32_POST_URL = "http://10.43.210.146:8080/api/qr-data"  # kirim QR ke ESP32 utama
+
+detector = cv2.QRCodeDetector()
+barcode_terakhir = None
+
+def ambil_gambar():
+    try:
+        res = requests.get(ESP32_CAM_URL, timeout=5)
+        if res.status_code == 200:
+            img_arr = np.frombuffer(res.content, np.uint8)
+            return cv2.imdecode(img_arr, cv2.IMREAD_COLOR)
+    except Exception as e:
+        print("Gagal ambil gambar:", e)
+    return None
+
+while True:
+    frame = ambil_gambar()
+    if frame is None:
+        time.sleep(1)
+        continue
+
+    data, bbox, _ = detector.detectAndDecode(frame)
+
+    if bbox is not None and data != "":
+        if data != barcode_terakhir:
+            print("Barcode terdeteksi:", data)
+            barcode_terakhir = data
+
+            # Kirim ke ESP32 MAIN
+            try:
+                payload = {"qr_data": data}
+                r = requests.post(ESP32_POST_URL, json=payload, timeout=5)
+                print("Respon ESP32:", r.text)
+            except Exception as e:
+                print("Gagal POST ke ESP32:", e)
+
+        # gambar kotak
+        pts = np.int32(bbox)
+        cv2.polylines(frame, [pts], True, (0, 255, 0), 2)
+
+    cv2.imshow("Scanner", frame)
+
+    if cv2.waitKey(1) & 0xFF == 27:
+        break
+
+cv2.destroyAllWindows()
